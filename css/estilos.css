@@ -1,0 +1,260 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*   Nav   */
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo a:hover{
+    text-decoration: none;
+}
+.menu{
+    background-color: rgb(0, 136, 215);
+    width :100vw;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 0 15px rgb(0, 0, 0) ;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 35px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+.menuItems {
+    display: flex;
+    list-style: none;
+    margin-right: 35px;
+}
+
+.menuItems li {
+    border-radius: 3px;
+    margin: 0 10px;
+}
+.menuItems li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+.menuItems li:hover, li.active{
+    background-color: rgb(0, 113, 165);
+    transition: .6s;
+}
+
+.btn_menu {
+    margin-right: 30px;
+    position: relative;
+    height: 25px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+ul.show {
+    top: 65px;
+    z-index: 750;
+    position: absolute;
+}
+/*    titulo    */
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: -90px;
+}
+
+
+/* Carousel */
+
+.carousel{
+    margin: 186px;
+    
+}
+.carousel__contenedor {
+    position: relative;
+}
+.carousel__siguiente,
+.carousel__anterior {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: calc(56% - 35px);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: rgb(0, 117, 171);
+    color: rgb(255, 255, 255);
+    opacity: 50%;
+    z-index: 10;
+}
+.carousel__lista {
+    overflow: hidden;
+}
+.carousel__anterior {
+    left: -47px;
+}
+.carousel__siguiente {
+    right: -47px;
+}
+.carousel__elemento {
+    padding: auto;
+}
+.carousel__indicadores{
+    position: relative;
+}
+
+/* Baners */
+.contenedor__baners{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-top: -20px;
+}
+.baners{
+    height: 150px;
+    width: 80vw;
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+.ban{
+    margin: auto;
+    text-align: justify;
+    width: calc(100% - 33.3%);
+    box-shadow: 2px 0px 5px rgb(0, 0, 0);
+    padding: 30px 20px;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    height: 200px;
+}
+.ban h1 {
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    background-color: rgb(0, 136, 215);
+    width: 100vw;
+    height: 100px;
+    margin-top: 220px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 952px) {
+    .logo{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+    .menuItems li a {
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 858px) {
+    .menu {
+        height: 65px;
+    }
+    .btn_menu {
+        display: inline-flex;
+        left: 13px;
+    }
+    .menuItems {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: rgb(26, 7, 0);
+        top: -100vw;
+        text-align: center;
+        transition: all .6;
+        flex-direction: column;
+    }
+    .menuItems li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .menuItems li:hover {
+        background: none;
+    }
+    .menuItems li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .menuItems li a:hover {
+        color: rgb(0, 66, 97);
+    }
+    .logo {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
+@media screen and (max-width:858px) and (orientation: landscape) {
+    .menuItems li{
+        margin: 5px 0 0 0;
+    }
+    .menuItems {
+        overflow: scroll;
+        height: calc(100% - 45px);
+    }
+}
+@media screen and (max-width:600px){
+    .carousel-items , .contenedor-carousel__items{
+        margin: -65px -5px 0 -5px;
+    }
+    .carousel__tarjeta{
+        height: 175px;
+    }
+    
+}
+@media screen and (max-width:404px) {
+    .menuItems {
+        position: fixed;
+        height: calc(100vw - 25px);
+    }
+    #mostrar,.menuItems,.show {
+        margin-bottom: 45px;
+    }
+
+    .ban{
+        
+    }
+    .ban p{
+        display: grid;
+        
+    }
+    
+}
+
+
+
+
+
+
